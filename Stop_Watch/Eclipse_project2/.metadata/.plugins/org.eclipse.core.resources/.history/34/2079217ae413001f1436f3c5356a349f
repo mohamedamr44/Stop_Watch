@@ -1,0 +1,44 @@
+/*
+ * main.c
+ *
+ *  Created on: May 17, 2024
+ *      Author: User-H
+ */
+
+#include "functions.h"
+
+int main(void)
+{
+	seven_segments_init();
+
+while(1)
+{
+
+	display_sec1(counter);
+	/*_delay_ms(5);
+
+	display_sec2(2);
+	_delay_ms(5);
+
+	display_min1(3);
+	_delay_ms(5);
+
+	display_min2(4);
+	_delay_ms(5);
+
+	display_hr1(5);
+	_delay_ms(5);
+
+	display_hr2(6);
+	_delay_ms(5);
+
+*/
+
+
+
+}
+
+
+
+	return 0;
+}

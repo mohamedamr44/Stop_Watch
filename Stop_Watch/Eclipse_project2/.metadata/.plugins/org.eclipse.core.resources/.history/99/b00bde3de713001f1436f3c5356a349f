@@ -1,0 +1,65 @@
+/*
+ * main.c
+ *
+ *  Created on: May 17, 2024
+ *      Author: User-H
+ */
+
+#include "functions.h"
+
+int main(void)
+{
+	seven_segments_init();
+	Timer1_init_ctc();
+
+while(1)
+{
+
+	if(timer_flag==1)
+	{
+		time.sec1++;
+		if(time.sec1>9)
+		{
+			time.sec1=0;
+			time.sec2++;
+
+		}
+		if(time.sec2>6)
+		{
+			time.sec2=0;
+			time.min1++;
+		}
+		if(time.min1>9)
+		{
+			time.min1=0;
+			time.min2++;
+
+		}
+		if(time.min2>6)
+		{
+			time.min2=0;
+			time.hr1++;
+		}
+		if(time.hr1>9)
+		{
+			time.hr1=0;
+			time.hr2++;
+		}
+		if(time.hr2>1)
+		{
+
+		}
+
+
+
+
+	}
+
+
+
+}
+
+
+
+	return 0;
+}

@@ -1,0 +1,20 @@
+/*
+ * functions.c
+ *
+ *  Created on: May 17, 2024
+ *      Author: User-H
+ */
+
+
+#include "functions.h"
+
+
+/*Initializing TImer 1 in CTC mode*/
+void Timer1_init_ctc(void)
+{
+	TCCR1B=(1<<WGM12);
+
+
+
+
+}

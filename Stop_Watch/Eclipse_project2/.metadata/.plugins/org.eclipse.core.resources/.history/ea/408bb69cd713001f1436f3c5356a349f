@@ -1,0 +1,19 @@
+/*
+ * timers.h
+ *
+ *  Created on: May 17, 2024
+ *      Author: User-H
+ */
+
+#ifndef FUNCTIONS_H_
+#define FUNCTIONS_H_
+
+#include <avr/io.h>
+
+void Timer1_init_ctc(void);
+
+
+
+
+#endif /* FUNCTIONS_H_ */
+

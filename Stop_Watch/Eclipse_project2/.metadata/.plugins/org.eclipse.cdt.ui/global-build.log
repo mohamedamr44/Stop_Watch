@@ -1,0 +1,3798 @@
+
+**** Build of configuration Debug for project stop_watch_Project2 ****
+
+Nothing to build for project stop_watch_Project2
+
+**** Build of configuration Debug for project stop_watch_Project2 ****
+
+Nothing to build for project stop_watch_Project2
+
+**** Build of configuration Debug for project stop_watch_Project2 ****
+
+Nothing to build for project stop_watch_Project2
+
+**** Build of configuration Debug for project stop_watch_Project2 ****
+
+Nothing to build for project stop_watch_Project2
+01:25:38 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     130 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:56:20 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+../functions.c:36: warning: return type defaults to 'int'
+../functions.c: In function 'ISR':
+../functions.c:36: warning: type of '__vector_7' defaults to 'int'
+../functions.c:40: warning: control reaches end of non-void function
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:13: warning: implicit declaration of function 'seven_segments_init'
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     274 bytes (0.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:56:37 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:14: warning: implicit declaration of function 'seven_segments_init'
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     274 bytes (0.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:57:04 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+../functions.c:36: warning: return type defaults to 'int'
+../functions.c: In function 'ISR':
+../functions.c:36: warning: type of '__vector_7' defaults to 'int'
+../functions.c:40: warning: control reaches end of non-void function
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     274 bytes (0.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:58:44 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+../functions.c: In function 'seven_segments_init':
+../functions.c:21: error: called object '255' is not a function
+../functions.c: At top level:
+../functions.c:38: warning: return type defaults to 'int'
+../functions.c: In function 'ISR':
+../functions.c:38: warning: type of '__vector_7' defaults to 'int'
+../functions.c:42: warning: control reaches end of non-void function
+make: *** [functions.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:58:58 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+../functions.c:38: warning: return type defaults to 'int'
+../functions.c: In function 'ISR':
+../functions.c:38: warning: type of '__vector_7' defaults to 'int'
+../functions.c:42: warning: control reaches end of non-void function
+Finished building: ../functions.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     290 bytes (0.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:01:43 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+../functions.c:47: warning: return type defaults to 'int'
+../functions.c: In function 'ISR':
+../functions.c:47: warning: type of '__vector_7' defaults to 'int'
+../functions.c:51: warning: control reaches end of non-void function
+Finished building: ../functions.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     352 bytes (1.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:03:30 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+../functions.c:56: warning: return type defaults to 'int'
+../functions.c: In function 'ISR':
+../functions.c:56: warning: type of '__vector_7' defaults to 'int'
+../functions.c:60: warning: control reaches end of non-void function
+Finished building: ../functions.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     450 bytes (1.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:04:12 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+../functions.c:56: warning: return type defaults to 'int'
+../functions.c: In function 'ISR':
+../functions.c:56: warning: type of '__vector_7' defaults to 'int'
+../functions.c:60: warning: control reaches end of non-void function
+Finished building: ../functions.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     456 bytes (1.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:04:52 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:15: warning: implicit declaration of function 'seven_segments_display'
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     460 bytes (1.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:05:30 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+../functions.c:56: warning: return type defaults to 'int'
+../functions.c: In function 'ISR':
+../functions.c:56: warning: type of '__vector_7' defaults to 'int'
+../functions.c:60: warning: control reaches end of non-void function
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:15: warning: implicit declaration of function 'seven_segments_display'
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     462 bytes (1.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:21:34 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+../functions.c:57: warning: return type defaults to 'int'
+../functions.c: In function 'ISR':
+../functions.c:57: warning: type of '__vector_7' defaults to 'int'
+../functions.c:61: warning: control reaches end of non-void function
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:15: warning: implicit declaration of function 'display_sec1'
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     486 bytes (1.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:21:53 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+../functions.c:57: warning: return type defaults to 'int'
+../functions.c: In function 'ISR':
+../functions.c:57: warning: type of '__vector_7' defaults to 'int'
+../functions.c:61: warning: control reaches end of non-void function
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     484 bytes (1.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:23:45 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+../functions.c:74: warning: return type defaults to 'int'
+../functions.c: In function 'ISR':
+../functions.c:74: warning: type of '__vector_7' defaults to 'int'
+../functions.c:78: warning: control reaches end of non-void function
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     610 bytes (1.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:24:46 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:16: warning: implicit declaration of function '_delay_ms'
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+./main.o: In function `main':
+../main.c:16: undefined reference to `_delay_ms'
+../main.c:18: undefined reference to `_delay_ms'
+make: *** [stop_watch_Project2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:25:06 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:12,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../functions.c:74: warning: return type defaults to 'int'
+../functions.c: In function 'ISR':
+../functions.c:74: warning: type of '__vector_7' defaults to 'int'
+../functions.c:78: warning: control reaches end of non-void function
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3976 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:26:17 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3748 bytes (11.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:27:26 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:28:00 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3728 bytes (11.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:28:30 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:28:58 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:29:31 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:30:17 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:32:14 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:32:48 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:33:15 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:33:45 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:34:10 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3728 bytes (11.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:34:29 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3728 bytes (11.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:34:53 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:34:54 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:35:31 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3728 bytes (11.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:35:50 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:36:59 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     608 bytes (1.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:37:32 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3728 bytes (11.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:38:00 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:38:28 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:39:00 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:41:45 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:42:44 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:43:13 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:43:44 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:44:34 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:45:44 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:47:16 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:12,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../functions.c:74: warning: return type defaults to 'int'
+../functions.c: In function 'ISR':
+../functions.c:74: warning: type of '__vector_7' defaults to 'int'
+../functions.c:78: warning: control reaches end of non-void function
+Finished building: ../functions.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:47:33 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:48:04 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:48:37 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:49:05 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:49:34 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:50:22 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:50:46 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:51:10 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:51:36 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:51:59 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3728 bytes (11.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:52:20 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:52:54 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3956 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:55:01 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:12,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../functions.c:74: warning: return type defaults to 'int'
+../functions.c: In function 'ISR':
+../functions.c:74: warning: type of '__vector_7' defaults to 'int'
+../functions.c:78: warning: control reaches end of non-void function
+Finished building: ../functions.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3816 bytes (11.6% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:55:44 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:12,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../functions.c:74: warning: return type defaults to 'int'
+../functions.c: In function 'ISR':
+../functions.c:74: warning: type of '__vector_7' defaults to 'int'
+../functions.c:78: warning: control reaches end of non-void function
+Finished building: ../functions.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3804 bytes (11.6% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:56:13 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3804 bytes (11.6% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:01:43 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:12,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../functions.c:74: warning: return type defaults to 'int'
+../functions.c: In function 'ISR':
+../functions.c:74: warning: type of '__vector_7' defaults to 'int'
+../functions.c:78: warning: control reaches end of non-void function
+Finished building: ../functions.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3840 bytes (11.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:01:49 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3840 bytes (11.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:02:23 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3840 bytes (11.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:03:54 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:12,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../functions.c:74: warning: return type defaults to 'int'
+../functions.c: In function 'ISR':
+../functions.c:74: warning: type of '__vector_7' defaults to 'int'
+../functions.c:78: warning: control reaches end of non-void function
+Finished building: ../functions.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3820 bytes (11.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:04:04 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3820 bytes (11.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:10:34 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:12,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../functions.c:99: warning: return type defaults to 'int'
+../functions.c: In function 'ISR':
+../functions.c:99: warning: type of '__vector_7' defaults to 'int'
+../functions.c:103: warning: control reaches end of non-void function
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5162 bytes (15.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:11:29 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:12,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5162 bytes (15.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:24:27 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:13,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../functions.c:9:
+../functions.h:29: warning: useless type name in empty declaration
+../functions.h:29: warning: data definition has no type or storage class
+../functions.h:29: warning: type defaults to 'int' in declaration of 'counter'
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../main.c:8:
+../functions.h:29: warning: useless type name in empty declaration
+../functions.h:29: warning: data definition has no type or storage class
+../functions.h:29: warning: type defaults to 'int' in declaration of 'counter'
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+./main.o: In function `main':
+../main.c:11: multiple definition of `counter'
+./functions.o:../functions.c:105: first defined here
+make: *** [stop_watch_Project2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:24:54 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:13,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../functions.c:9:
+../functions.h:29: warning: useless type name in empty declaration
+../functions.h:29: warning: data definition has no type or storage class
+../functions.h:29: warning: type defaults to 'int' in declaration of 'counter'
+../functions.c:105: warning: return type defaults to 'int'
+../functions.c: In function 'ISR':
+../functions.c:105: warning: type of '__vector_7' defaults to 'int'
+../functions.c:109: warning: control reaches end of non-void function
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../main.c:8:
+../functions.h:29: warning: useless type name in empty declaration
+../functions.h:29: warning: data definition has no type or storage class
+../functions.h:29: warning: type defaults to 'int' in declaration of 'counter'
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+./main.o: In function `main':
+../main.c:11: multiple definition of `counter'
+./functions.o:../functions.c:105: first defined here
+make: *** [stop_watch_Project2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:25:15 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:13,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../functions.c:105: warning: return type defaults to 'int'
+../functions.c: In function 'ISR':
+../functions.c:105: warning: type of '__vector_7' defaults to 'int'
+../functions.c:109: warning: control reaches end of non-void function
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5190 bytes (15.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:25:34 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:13,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5192 bytes (15.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:26:08 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:13,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../functions.c:9:
+../functions.h:29: warning: useless type name in empty declaration
+../functions.h:29: warning: data definition has no type or storage class
+../functions.h:29: warning: type defaults to 'int' in declaration of 'counter'
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../main.c:8:
+../functions.h:29: warning: useless type name in empty declaration
+../functions.h:29: warning: data definition has no type or storage class
+../functions.h:29: warning: type defaults to 'int' in declaration of 'counter'
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+./main.o: In function `main':
+../main.c:11: multiple definition of `counter'
+./functions.o:../functions.c:105: first defined here
+make: *** [stop_watch_Project2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:26:31 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:13,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+./main.o: In function `main':
+../main.c:11: multiple definition of `counter'
+./functions.o:../functions.c:105: first defined here
+make: *** [stop_watch_Project2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:26:44 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+./main.o: In function `main':
+../main.c:11: multiple definition of `counter'
+./functions.o:../functions.c:105: first defined here
+make: *** [stop_watch_Project2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:27:07 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:13,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5222 bytes (15.9% Full)
+(.text + .data + .bootloader)
+
+Data:          9 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:27:46 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     760 bytes (2.3% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:29:10 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:13,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     764 bytes (2.3% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:44:02 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:13,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     880 bytes (2.7% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:48:57 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5362 bytes (16.4% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:49:33 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5362 bytes (16.4% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:52:05 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5368 bytes (16.4% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:01:42 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5396 bytes (16.5% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:02:23 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5400 bytes (16.5% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:23:15 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5400 bytes (16.5% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:23:22 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5400 bytes (16.5% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:28:03 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5400 bytes (16.5% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:32:41 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:13,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:91: error: expected identifier or '(' before 'return'
+../main.c:92: error: expected identifier or '(' before '}' token
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+04:33:16 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5390 bytes (16.4% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:34:31 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5380 bytes (16.4% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:38:40 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:13,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5390 bytes (16.4% Full)
+(.text + .data + .bootloader)
+
+Data:         14 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:41:06 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5390 bytes (16.4% Full)
+(.text + .data + .bootloader)
+
+Data:         14 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+05:13:17 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:13,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5470 bytes (16.7% Full)
+(.text + .data + .bootloader)
+
+Data:         14 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+05:13:58 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5470 bytes (16.7% Full)
+(.text + .data + .bootloader)
+
+Data:         14 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+05:24:11 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:13,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../functions.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5474 bytes (16.7% Full)
+(.text + .data + .bootloader)
+
+Data:         14 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+05:25:41 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:13,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../functions.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5530 bytes (16.9% Full)
+(.text + .data + .bootloader)
+
+Data:         14 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+05:25:56 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5530 bytes (16.9% Full)
+(.text + .data + .bootloader)
+
+Data:         14 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+05:27:00 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5534 bytes (16.9% Full)
+(.text + .data + .bootloader)
+
+Data:         14 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+05:36:59 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:13,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5716 bytes (17.4% Full)
+(.text + .data + .bootloader)
+
+Data:         14 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+05:40:47 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5716 bytes (17.4% Full)
+(.text + .data + .bootloader)
+
+Data:         14 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+05:58:57 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:13,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../functions.c: In function 'INT2_init':
+../functions.c:146: error: called object '*91u' is not a function
+make: *** [functions.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+05:59:07 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:13,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../functions.c: In function 'INT2_init':
+../functions.c:146: error: called object '*91u' is not a function
+make: *** [functions.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+05:59:26 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:13,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../functions.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../functions.h:13,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5888 bytes (18.0% Full)
+(.text + .data + .bootloader)
+
+Data:         14 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+06:00:58 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:13,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../functions.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5902 bytes (18.0% Full)
+(.text + .data + .bootloader)
+
+Data:         14 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+06:04:09 **** Incremental Build of configuration Debug for project stop_watch_Project2 ****
+make all 
+Building file: ../functions.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"functions.d" -MT"functions.o" -c -o "functions.o" "../functions.c"
+In file included from ../functions.h:13,
+                 from ../functions.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../functions.c
+ 
+Building target: stop_watch_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop_watch_Project2.map -mmcu=atmega32 -o "stop_watch_Project2.elf"  ./functions.o ./main.o   
+Finished building target: stop_watch_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop_watch_Project2.elf  >"stop_watch_Project2.lss"
+Finished building: stop_watch_Project2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex stop_watch_Project2.elf  "stop_watch_Project2.hex"
+Finished building: stop_watch_Project2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 stop_watch_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5888 bytes (18.0% Full)
+(.text + .data + .bootloader)
+
+Data:         14 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
